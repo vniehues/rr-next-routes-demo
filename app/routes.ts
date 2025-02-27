@@ -1,3 +1,3 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
+import {nextRoutes, pageRouterStyle} from "rr-next-routes";
 
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+export default nextRoutes({...pageRouterStyle, print: "table", folderName: "routes", layoutFileName: "layout"});
